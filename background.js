@@ -14,7 +14,6 @@ function checkForSpotify(a, b, c) {
 	}
 }
 
-
 function checkSong(a,b,c) {
 
 }
@@ -29,8 +28,9 @@ function checkAllTabs(a){
 		}
 	}
 }
+
 function checkSpotifyClose(a,b){
-	if(a==id) {
+	if(on==true && a==id) {
 		id=null;
 		on=false;
 		chrome.browserAction.setIcon({ path: "icongray38.png"});
